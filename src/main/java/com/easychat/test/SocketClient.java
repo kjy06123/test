@@ -11,7 +11,7 @@ public class SocketClient {
             socket = new Socket("127.0.0.1",1024);
             OutputStream outputStream = socket.getOutputStream();
             PrintWriter printWriter = new PrintWriter(outputStream);
-            System.out.println("请输入内容");
+            System.out.println("请输入内容搜索");
             new Thread (()->{
                 while (true) {
                     Scanner scanner = new Scanner(System.in);
